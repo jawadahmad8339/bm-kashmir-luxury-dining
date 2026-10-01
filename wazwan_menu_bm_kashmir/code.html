@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "surface-container-low": "#f6f3ee", "surface-variant": "#e5e2dd", "primary-container": "#3b1218", "tertiary-fixed-dim": "#afcdbe", "on-tertiary-fixed": "#052016", "inverse-on-surface": "#f3f0eb", "surface-container-high": "#ebe8e3", "background": "#fcf9f4", "inverse-primary": "#fbb4ba", "on-primary-fixed-variant": "#6a383d", "secondary": "#735c00", "tertiary": "#000b06", "surface-tint": "#864f54", "on-tertiary-container": "#728e80", "on-primary-container": "#b4777c", "on-secondary": "#ffffff", "tertiary-container": "#0a251b", "primary-fixed": "#ffdadb", "surface-bright": "#fcf9f4", "secondary-fixed": "#ffe088", "on-surface-variant": "#514344", "primary": "#1b0003", "on-secondary-fixed-variant": "#574500", "on-error-container": "#93000a", "on-surface": "#1c1c19", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "outline-variant": "#d6c2c2", "inverse-surface": "#31302d", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#324c41", "surface-dim": "#dcdad5", "secondary-container": "#fed65b", "surface-container": "#f0ede9", "tertiary-fixed": "#cbe9da", "error-container": "#ffdad6", "on-background": "#1c1c19", "on-secondary-fixed": "#241a00", "surface-container-highest": "#e5e2dd", "outline": "#847374", "on-error": "#ffffff", "on-primary-fixed": "#360e14", "surface": "#fcf9f4", "on-secondary-container": "#745c00", "secondary-fixed-dim": "#e9c349", "primary-fixed-dim": "#fbb4ba" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xs": "0.25rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "3rem" }, fontFamily: { "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "price-display": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700"}], "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "600"}], "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}], "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}], "title-lg": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "price-display": ["20px", {"lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="BM Kashmir Restaurant Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VEOySl3JY5sZQ3uQmPpG9QvWV-gSRPZ_bhSMEfxffKe5TFeT6xTngxn4-byw5ei2TMynvfWq5qNGAYonxFN7ZQe8XJo4sN8a_rwvbu-AhVnu4FAnUN4RuMJgwX2Tp1HT5EOYxK0cM__F_Yrn-AnylUMEXVqb8vePrM6zRcJvy-3uRrvM2d4Mhkw60zs2fG6IwMCtRHXFqzDMSiDdbIpvHIrixYT5iYbXsuM4K-h5rxj_ydunEqooYCwdAJ"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-primary truncate leading-none">BM Kashmir</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase flex-shrink-0">24/7 Open</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase tracking-widest">Wazwan Menu</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Call BM Kashmir Restaurant" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary active:bg-secondary-fixed transition-colors" href="tel:+923068967672"><span class="material-symbols-outlined text-[20px]">call</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Heritage Marquee Notification -->
+<div class="bg-primary px-margin-mobile py-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<p class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Wazwan Master Waza on Duty • 24/7 Hot Delivery</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Freshly Simmered
+    </span>
+</div>
+<!-- Interactive Search & Filter Bar -->
+<div class="px-margin-mobile pt-4 pb-2">
+<div class="relative flex items-center bg-surface-container rounded-full px-4 py-2.5 shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="bg-transparent text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none w-full" id="menu-search" placeholder="Search Wazwan, Gushtaba, Rogan Josh..." type="text"/>
+<button aria-label="Spicy filter toggle" class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary ml-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Sticky Category Navigation Pills -->
+<div class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md py-3 shadow-[0_4px_16px_-4px_rgba(59,18,24,0.06)]">
+<div class="flex items-center gap-2 overflow-x-auto px-margin-mobile no-scrollbar" id="category-pills">
+<button class="category-pill active flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-primary text-secondary-fixed shadow-sm transition-all duration-200" data-cat="all">
+        All Specialities
+      </button>
+<button class="category-pill flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-cat="wazwan">
+        Royal Wazwan
+      </button>
+<button class="category-pill flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-cat="mutton">
+        Mutton &amp; Curries
+      </button>
+<button class="category-pill flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-cat="tandoor">
+        Tandoor &amp; Breads
+      </button>
+<button class="category-pill flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-cat="dessert">
+        Noon Chai &amp; Sweets
+      </button>
+</div>
+</div>
+<div class="px-margin-mobile py-4 space-y-6">
+<!-- Chef's Crown Jewel Spotlight Hero Card -->
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(59,18,24,0.09)]">
+<!-- Image with Vignette Scrim -->
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Authentic Kashmiri Rogan Josh in a hammered copper and brass deghchi with shimmering gravy scented with maval flower, garnished with ginger slivers and 24-karat pure edible gold leaf, soft atmospheric lighting against dark timber table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsvcfjyl1wNUHIu4pXdvlVKOYink5Q2QbVuv7UIvEEB_TvQn_QGWc1_5m_xUFyyC_nQvmBh5dhDdOFhoY4YGeB0eqt64bPMXSGXyj33-hZrRNoe8V_KNd7RmvmGXd-XZ264xP2GY8PWB1JB2EwsB19veFovJl32EkBLI4PKnhdZMBSiVwYgsyMjbB9p8bVyYHbPPD8-e-gGBnkrspXTRbc_JKPMPbGLQC5b9a5m1FOj-x77tuLEvLtrw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<!-- Crown Jewel Badge -->
+<div class="absolute top-3 left-3 bg-primary/95 text-secondary-fixed px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md backdrop-blur-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">crown</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Chef's Crown Jewel</span>
+</div>
+<!-- 24/7 Availability Pill -->
+<div class="absolute top-3 right-3 bg-secondary-fixed text-on-secondary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 24/7 Fresh
+        </div>
+<!-- Float Title & Metadata Overlay -->
+<div class="absolute bottom-3 left-3 right-3 text-on-primary">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-secondary-fixed/20 backdrop-blur-sm text-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded uppercase">Slow-Braised 6 Hours</span>
+<div class="flex items-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm ml-0.5 font-bold">4.9 (1.4k)</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md leading-tight text-on-primary font-serif">Mughlai Kashmiri Rogan Josh</h2>
+</div>
+</div>
+<!-- Spotlight Body Content -->
+<div class="p-space-md bg-surface-container-lowest">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          Succulent tender lamb shank simmered slow in a velvety gravy infused with Kashmiri cockscomb herb (<em class="italic">maval</em>), sun-dried chillies, and crushed cardamoms topped with edible gold leaf and shredded fresh ginger.
+        </p>
+<!-- Flavor Profile Tags -->
+<div class="flex flex-wrap items-center gap-1.5 mt-3">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">local_fire_department</span> Mild Royal Warmth
+          </span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">takeout_dining</span> Insulated Clay Degh Packing
+          </span>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-between mt-4 pt-3 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md p-space-md rounded-b-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Per Royal Portion</span>
+<span class="font-price-display text-price-display text-primary font-bold">PKR 1,850</span>
+</div>
+<button class="px-5 py-3 rounded-full bg-primary text-secondary-fixed font-label-lg text-label-lg uppercase tracking-wider shadow-md active:scale-95 transition-all flex items-center gap-1.5" onclick="addToOrder('Mughlai Kashmiri Rogan Josh', 1850)">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+<span>Add to Order</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section Heading: Royal Wazwan Tradition -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Heirloom Recipes</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Imperial Wazwan Delicacies</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-1 rounded-full">6 Signature Dishes</span>
+</div>
+<!-- Dish 1: Gushtaba -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="wazwan mutton">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded-sm bg-tertiary-container flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">King of Wazwan</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Gushtaba (Yoghurt Meatballs)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Velvety mutton meatballs hand-pounded for four hours on smooth walnut logs, gently poached in saffron &amp; wild mint yoghurt curry.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">soup_kitchen</span> Creamy Velveteen
+            </span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Kashmiri Gushtaba dish showing pristine soft pounded mutton meatballs swimming in an aromatic cream-colored yoghurt broth garnished with saffron filaments and dried mint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-7Zt85S8pqM_tDUM_ACvFuAaBfIYMIvbUrMhOE0vFZhRQYYMGQsozI3hWDSZkQh2WLPtROToECiKiL73TIpTcDvNwQv7MBnCpWJLS6o3h7yPGkiPrUOCwsOY55Ck6SWtzESxF_y1yWHUlz4k5Q6lLsvriYIu9Eav2IxWwWWVb6PPP5zy2K0UTBGJ2l2BTZ6sA4T7CYGoODzoy5oEM5VS275QIV6U2FwjES6_hqvZRdmQVsjdPH2u5Rw"/>
+<div class="absolute bottom-1 right-1 bg-primary/80 backdrop-blur-xs text-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded">
+            Royal Feast
+          </div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 1,950</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Gushtaba', 1950)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Dish 2: Rista -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="wazwan mutton">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-3.5 h-3.5 rounded-sm bg-tertiary-container flex items-center justify-center p-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">local_fire_department</span> Fiery Crimson Gravy
+              </span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Rista (Red Saffron Meatballs)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Silken mutton meatballs simmered in a shimmering, deep-red broth of Kashmiri chillies, fennel seeds, and royal saffron extract.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pair with Roghani Naan</span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Kashmiri Rista dish featuring fiery red gravy with delicate pounded lamb meatballs in a polished bronze bowl, aromatic oil reflection with floating whole spices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7h8Hd4ItB6snLwp7KAsklCQyiPW_3EtR1TzievHrnjMSdcM7c5SN4IPRpe9UOTsUb0FYBrKIELarU2YtkbuVN_ag5ZxP5_dUl_DS6pkI1m9Zg9ThJqN-JrgJsM_FovjUUxsSF8PfJIKf2Pwh-f1oB3yHyJJ8Xmo629-jT4_s7Q8gRAdk_qdUpuwbKXn0hV8zBRG65aOCcevcM01rhSGCHALSubxXtklIB0jwfUFLp6mBERYBBkdmCEw"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 1,850</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Rista', 1850)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Dish 3: Kashmiri Tabak Maaz -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="wazwan mutton">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Crisp &amp; Gilded</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Kashmiri Tabak Maaz</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Prime lamb ribs poached gently in saffron milk and whole cloves, then pan-crisped to crackling golden perfection in pure desi ghee.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Signature Wazwan Starter</span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden crisp Kashmiri Tabak Maaz fried lamb ribs served on an engraved brass tray with crushed red chillies, lemon wedges, and fresh coriander, glossy sheen of pure ghee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBswv4WEscPQmuVK0ImFynmghS13SQ9Gs3mB3orOLvknUKG4tFC4Oi2lB-5K2NoRRYDc7hwIKx36olXzgnSOyChdd20804mt6IiTzgmhXJESwjdfUtdVQVw7t_5f3UmRoaeXFJ-FC2nA6IvyoQUn6wqT0LXtkStUnVTaHja8K0o0e2TzQOHE6EuLKcgzEjG2f85ijmryFAMx80vpcKzPOMNZvCDIlzRf7g_sf-EeuXtkaAJO_x4D0wEKg"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 2,100</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Kashmiri Tabak Maaz', 2100)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Section Heading: Rice, Breads & Accompaniments -->
+<div class="flex items-center justify-between pt-3">
+<div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">rice_bowl</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Fragrant Basmati</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Pulao &amp; Tandoor Delicacies</h3>
+</div>
+</div>
+<!-- Dish 4: Kashmiri Mutton Pulao -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="mutton tandoor">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Aromatic Shahi Rice</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Kashmiri Mutton Pulao</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Aged long-grain basmati cooked in rich bone broth, garnished with fried golden almonds, cashews, black raisins, and strands of saffron.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span> Saffron Infused
+            </span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Kashmiri Mutton Pulao with extra long basmati rice tinted golden with saffron, topped with browned almonds, cashews, caramelized onions, and succulent mutton pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAePmLYrVjbeRJ8DOF30nNXBsIADTJ-fiO2PchfDU_su4t13pt8uTve5hb93HU9LR6EtG6UZduBusA6xM8oFuVrRyf2eXEFV50ZtyR2mu63wDmINVEGx7fCjd1jAokO9Y1ef0SF7lCFbdtRcTH1opqMQrO4VQJkZElsWCubtRmSxX7T-rx0J7AqV5C0EIqJOgokoPJLLacJF2XeB7QjG4zufb_xSi8bWChkfRYbjR4bs-3vFUC3QyDrYg"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 1,450</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Kashmiri Mutton Pulao', 1450)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Section Heading: Royal Noon Chai & Sweets -->
+<div class="flex items-center justify-between pt-3">
+<div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Traditional Kashmiri Chai</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Noon Chai &amp; Shahi Halwa</h3>
+</div>
+</div>
+<!-- Dish 5: Traditional Noon Chai with Sheermal (Using IMAGE_2) -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="dessert tandoor">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Iconic Pink Tea</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Noon Chai with Sheermal &amp; Kulcha</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Authentic salted pink tea brewed in royal silver samovars with cardamom and pistachio slivers, served alongside saffron-glazed sheermal bread.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_cafe</span> Served Hot 24/7
+            </span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UIvLu_Udeld8vEm27kHqiGFYBw2UBzaMTj7AwxU31Nm405NnoobT_4MuUeR3-irbXaVHlRPSwsXPqBhvptGb_uTwHuHz0yk_luYiu_8l1AqbPH68Nz9BWeq5JntVijBOy9xB6Gt3JU1zLAsAkRBgmMo_cybRhkAOiR7bNl82_7ayKpDKgCJo0WTshpsZ4npcwvI76hB9DmhwdPJ6XaHiwWvXcLAjI9aqiqDPGqRBAJhpzJDPJPAPmsiEg9"/>
+<div class="absolute bottom-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded font-label-sm text-label-sm text-primary font-bold">
+            Pink Blend
+          </div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 450</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Noon Chai &amp; Sheermal', 450)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Dish 6: Kashmiri Firin Dessert -->
+<div class="dish-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3" data-category="dessert">
+<div class="flex gap-3">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Heritage Dessert</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary leading-snug">Shahi Firin (Kashmiri Semolina Pudding)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+              Chilled creamy ground rice and milk custard flavored with crushed green cardamom, saffron syrup, and covered in silver *varq*.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Served in Earthen Shikora Pots</span>
+</div>
+</div>
+<div class="relative w-28 h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Kashmiri Firin pudding in rustic clay terracotta bowls topped with slivers of green pistachios, crushed almonds, rose petals, and shimmering delicate silver leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAR0fgX_TsA52BMyCWiUEEGcjaTfJ-bBZu2K8UjDYrVq2pzQPaPPPdxVRn75KtOD8sVS5F1KvzeogFqKFqLNsK1UmdZHx-I-8lsBc5YFS0yNwuEgyt6xVGyyLfjgaf3YCh-SY2JiOjwXhmStKmTqJq5uPk8DFw-kRfi7WxeI8vDfkXw3-dxluHUOl59HbzG6qxBRKeJfWrRV-Kty5-bpDWOuAj1uNc7xozZtTZTUUJjESTOvSDKRIWHg"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2.5 rounded-b-xl">
+<span class="font-price-display text-price-display text-primary">PKR 380</span>
+<button class="px-4 py-2 rounded-full bg-primary text-secondary-fixed font-label-md text-label-md uppercase tracking-wider shadow-sm active:scale-95 transition-all flex items-center gap-1" onclick="addToOrder('Shahi Firin', 380)">
+<span class="material-symbols-outlined text-[16px]">add</span> Add
+        </button>
+</div>
+</div>
+<!-- Royal Wazwan Banquet Box Promotion Banner -->
+<div class="bg-gradient-to-br from-primary via-primary-container to-primary text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="relative z-10 space-y-2">
+<div class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">
+          Traam Feast for 4 Guests
+        </div>
+<h4 class="font-headline-sm text-headline-sm leading-tight text-secondary-fixed font-serif">Imperial Kashmiri Wazwan Traam</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+          Includes Rogan Josh, Gushtaba, Rista, Tabak Maaz, Seekh Kabab, Zafrani Pulao, 4 Sheermal, and Chilled Firin in an insulated copper presentation banquet box.
+        </p>
+<div class="flex items-center justify-between pt-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase">Royal Traam Set</span>
+<span class="font-price-display text-price-display text-secondary-fixed font-bold">PKR 8,500</span>
+</div>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-4 py-2.5 rounded-full font-label-md text-label-md uppercase tracking-wider font-bold shadow-md active:scale-95 transition-transform flex items-center gap-1.5" onclick="addToOrder('Royal Wazwan Traam (4 Pax)', 8500)">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Order Traam
+          </button>
+</div>
+</div>
+</div>
+<!-- Assurance Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2 pb-6">
+<div class="bg-surface-container p-3 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-[22px] mb-1">lock_clock</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Open 24 Hours</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Always simmering</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-[22px] mb-1">takeout_dining</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Thermal Packs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Arrives piping hot</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-[22px] mb-1">verified</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">100% Halal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Authentic Wazas</span>
+</div>
+</div>
+</div>
+<!-- Floating Sticky Bottom Order Dock -->
+<div class="fixed bottom-16 left-0 right-0 z-40 px-margin-mobile pb-3 transition-transform duration-300" id="cart-drawer">
+<div class="bg-primary text-on-primary rounded-xl p-3.5 shadow-[0_12px_32px_rgba(27,0,3,0.35)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center font-bold" id="cart-count-badge">3</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-bold leading-tight" id="cart-summary-text">3 items in royal order</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold" id="cart-total-text">Total: PKR 4,150</span>
+</div>
+</div>
+<a class="px-4 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold uppercase tracking-wider shadow-sm flex items-center gap-1.5 active:scale-95 transition-transform flex-shrink-0" href="https://wa.me/923068967672?text=Hello%20BM%20Kashmir%2C%20I%20would%20like%20to%20place%20an%20order%20for%20Royal%20Wazwan" target="_blank">
+<span>Order WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Interactive Script for micro-delights -->
+<script>
+    let cartTotal = 4150;
+    let cartCount = 3;
+
+    function addToOrder(dishName, price) {
+      cartCount += 1;
+      cartTotal += price;
+      
+      const badge = document.getElementById('cart-count-badge');
+      const countText = document.getElementById('cart-summary-text');
+      const totalText = document.getElementById('cart-total-text');
+      
+      if(badge) badge.innerText = cartCount;
+      if(countText) countText.innerText = `${cartCount} items in royal order`;
+      if(totalText) totalText.innerText = `Total: PKR ${cartTotal.toLocaleString()}`;
+
+      // Toast feedback
+      const toast = document.createElement('div');
+      toast.className = 'fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-primary text-secondary-fixed px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider shadow-xl flex items-center gap-1.5 transition-all';
+      toast.innerHTML = `<span class="material-symbols-outlined text-[18px]">check_circle</span> Added ${dishName}!`;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 1600);
+    }
+
+    // Category Tabs Filtering Microinteraction
+    document.querySelectorAll('.category-pill').forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        document.querySelectorAll('.category-pill').forEach(p => {
+          p.classList.remove('bg-primary', 'text-secondary-fixed');
+          p.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        pill.classList.remove('bg-surface-container', 'text-on-surface');
+        pill.classList.add('bg-primary', 'text-secondary-fixed');
+
+        const cat = pill.getAttribute('data-cat');
+        const cards = document.querySelectorAll('.dish-card');
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category') || '';
+          if (cat === 'all' || cardCat.includes(cat)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Realtime Search Filter
+    const searchInput = document.getElementById('menu-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.dish-card');
+        cards.forEach(card => {
+          const title = card.querySelector('h4')?.innerText.toLowerCase() || '';
+          const desc = card.querySelector('p')?.innerText.toLowerCase() || '';
+          if (title.includes(query) || desc.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(59,18,24,0.06)]" data-active-classes="text-primary font-title-md"><div class="h-16 px-gutter-mobile flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="royal-dining" href="../royal_dining_bm_kashmir/code.html"><span class="material-symbols-outlined text-[22px]">dinner_dining</span><span class="font-label-sm text-label-sm mt-0.5">Royal Dining</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors text-primary font-title-md" data-path="wazwan-menu" href="../index.html#menu"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5">Wazwan</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="reserve-table" href="../reserve_table_bm_kashmir/code.html"><span class="material-symbols-outlined text-[22px]">table_restaurant</span><span class="font-label-sm text-label-sm mt-0.5">Reserve</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant transition-colors" data-path="reviews-heritage" href="../reviews_location_bm_kashmir/code.html"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-sm text-label-sm mt-0.5">Heritage</span></a></div></nav></body></html>
